@@ -1,5 +1,7 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- !vanilla CSS  -->
-    <link rel="stylesheet" href="{% static '/static/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
     <!-- !Icon  -->
     <script src="https://kit.fontawesome.com/9538e475ca.js" crossorigin="anonymous"></script>
     <!-- ?⚠️Mast have parts of files end -->
@@ -24,7 +26,7 @@
         <p class="Font_Abel text-white mb-[50px] md:text-2xl md:mb-10">Let’s make friends</p>
         <button
             class="Font_Inter text-base font-semibold text-white bg-[#0A9FBF] hover:bg-[#0a677c] py-3 px-6 rounded-md md:text-2xl"><a
-                href="./logIn.html">Let’s get started</a></button>
+                href="{% url 'login' %}">Let’s get started</a></button>
     </div>
 </body>
 </body>
