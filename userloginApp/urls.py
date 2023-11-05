@@ -4,5 +4,5 @@ urlpatterns = [
     path('', index, name="index"),
     path('login/', login, name='login'),
     path('signUp/', signUp, name='signUp'),
-    path('verification/', signUP_verification, name='signUP_verification'),
+    path('user_verify/', user_verify, name='user_verify'),
 ]

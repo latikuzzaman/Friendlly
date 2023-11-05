@@ -28,7 +28,8 @@
                 <p class="Font_Inter text-[#38807B] text-center mb-5">To confirm your id you need to <br>
                     verify your account with email.please <br>
                     enter the code that we have send you.</p>
-                <form method="">
+                <form method="POST">
+                    {% csrf_token %}
                     <input type="text" placeholder="Enter code"
                         class="input input-bordered bg-transparent border-2 border-white w-full placeholder:text-white mb-5" />
                     <button type="button"
